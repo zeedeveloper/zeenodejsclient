@@ -7,13 +7,15 @@ Configuration
 Edit config/default.json, update
 * url
 * auth
-** user
-** password
+ * user
+ * password
 
 Input File 
 ------------
 update users.csv
+
 Format of csv should have first line matching with restAPI field names
+```
 {
   "id": 3,
   "title": "Tester",
@@ -31,9 +33,12 @@ Format of csv should have first line matching with restAPI field names
   "credentialsExpired": false,
   "loginName": "steve.waugh"
 }
+```
 
 Execution
 ------------
+```
 npm install
 node index.js
+```
 
