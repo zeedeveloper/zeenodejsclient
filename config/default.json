@@ -1,0 +1,9 @@
+{
+	"server":{
+		"url":"http://localhost:8080",
+		"auth":{
+			"user":"test.manager",
+			"password":"test.manager"
+		}
+	}
+}

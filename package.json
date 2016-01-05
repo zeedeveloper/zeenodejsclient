@@ -1,0 +1,17 @@
+{
+  "name": "zeenodejsclient",
+  "version": "1.0.0",
+  "description": "Node JS client for ZEE Rest APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "developer@getzephyr.com",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "config": "^1.17.1",
+    "csvtojson": "^0.5.1",
+    "node-rest-client": "^1.5.1"
+  }
+}
