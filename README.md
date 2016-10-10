@@ -4,9 +4,10 @@ Add users to ZEE
 Setup
 ------------
 * Install Node/NPM from https://nodejs.org/en/download/
+* Make sure git client is installed.
 * Checkout latest sourcecode
 ```
-git clone https://github.com/zeedeveloper/zeenodejsclient
+git clone https://github.com/zeedeveloper/zeenodejsclient.git
 cd zeenodejsclient
 ```
 
