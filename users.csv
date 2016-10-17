@@ -1,1 +1,1 @@
-lastName,firstName,email,username,loginName,location
+lastName,firstName,email,username,loginName,location,roleId,roleName

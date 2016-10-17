@@ -24,13 +24,16 @@ converter.fromFile("./users.csv", function (err, result) {
       console.log("Required data missing, skipping user " + ": %j", result[index])
       continue;
     }
-    userJson.data.roles = [
-      {
-        "id": 3,
-        "name": "tester",
-        "description": "Tester (Default role, cannot be modified)"
-      }
-    ]
+    var role = {
+      "id": 3,
+      "name": "tester",
+      "description": "Tester (Default role, cannot be modified)"
+    };
+    if(userJson.data.roleId && userJson.data.roleName){
+      role = {"id" : userJson.data.roleId, "name" : userJson.data.roleName}
+    }
+    userJson.data.roles = [ role ]
+
     if (!userJson.data.location)
       result[index].location = "Unknown"
     if(!userJson.data.loginName)
